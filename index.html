@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
-  </head>
-  <body>
-    <!-- HEADER START -->
-    <header class="header"></header>
-    <!-- HEADER END -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project</title>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    </head>
+    <body>
+        <!-- HEADER START -->
+        <header>
+            <!-- <h1>SPLITTER</h1> -->
+            <img src="./images/logo.svg" class="logo" alt="" />
+        </header>
+        <!-- HEADER END -->
 
-    <!-- MAIN START -->
-    <main class="main"></main>
-    <!-- MAIN END -->
+        <!-- MAIN START -->
+        <main class="main">
+            <form>
+                <div class="input">
+                    <div class="bill-content">
+                        <label class="label"> Bill</label>
+                        <div class="bill-input-content">
+                            <img src="./images/dollor-img.svg" alt="" />
+                            <input type="number" placeholder="0" />
+                        </div>
+                    </div>
+                    <div class="select-tip">
+                        <legend class="label">Select tip</legend>
+                        <div class="btn-container">
+                            <div class="btn-cont">
+                                <button class="form-btn" type="submit">
+                                    5%
+                                </button>
+                                <button class="form-btn" type="submit">
+                                    10%
+                                </button>
+                                <button class="form-btn" type="submit">
+                                    15%
+                                </button>
+                                <button class="form-btn" type="submit">
+                                    25%
+                                </button>
+                                <button class="form-btn" type="submit">
+                                    50%
+                                </button>
+                                <button class="form-btn" type="button">
+                                    <input type="number" placeholder="Custom" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people-content">
+                        <label class="label"> Number of people</label>
+                        <div class="bill-input-content">
+                            <img src="./images/icon-person.svg" alt="" />
+                            <input type="number" placeholder="0" />
+                        </div>
+                    </div>
+                </div>
+                <div id="output">
+                    <div class="output-numbers">
+                        <p id="tip-person">
+                            Tip Amount<br /><span>/ person</span>
+                        </p>
+                        <p id="tipSum">$4.27</p>
+                    </div>
+                    <div class="output-numbers totalOutput">
+                        <p id="total-person">
+                            Total<br /><span>/ person</span>
+                        </p>
+                        <p id="totalSum">$32.79</p>
+                    </div>
+                    <input
+                        type="reset"
+                        value="Reset"
+                        id="reset"
+                        name="reset"
+                        class="empty"
+                    />
+                    <!-- <label for="reset" class="hide-visually">Reset</label> -->
+                </div>
+            </form>
+        </main>
+        <!-- MAIN END -->
 
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
-  </body>
+        <!-- FOOTER START -->
+        <footer class="footer"></footer>
+        <!-- FOOTER END -->
+    </body>
 </html>
